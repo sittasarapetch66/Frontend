@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7f50, #1e90ff); /* Gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 300px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out; /* Add some animation */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6347; /* Change heading color */
+    font-size: 24px;
+    text-shadow: 2px 2px #ffe4b5; /* Text shadow for the heading */
+}
+
+label {
+    display: block;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #32cd32; /* Change button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #228b22; /* Darker green on hover */
+}
+
+#mes

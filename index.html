@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <!-- Checkbox for Show Password -->
+            <div class="checkbox-container">
+                <label style="text-align: center; color: gray;" for="togglePassword">show password</label>
+                <input type="checkbox" id="togglePassword">
+            </div>
+
+            <button type="button" onclick="submitLogin()">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('change', function () {
+            const passwordInput = document.getElementById('password');
+            passwordInput.type = this.checked ? 'text' : 'password'; // Show/hide password
+        });
+    </script>
+</body>
+</html>
+
