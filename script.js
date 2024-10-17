@@ -37,4 +37,9 @@ function submitLogin() {
 })
 .catch(error => console.error('Error:', error));
 }
+document.getElementById('togglePassword').addEventListener('change', function () {
+    const passwordInput = document.getElementById('password');
+    passwordInput.type = this.checked ? 'text' : 'password'; // Show/hide password
+});
+
 
